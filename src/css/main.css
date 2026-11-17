@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-slate-50 text-slate-800 antialiased font-sans;
+  }
+}
+
+@layer components {
+  /* Gutenberg block styling */
+  .wp-block-image img {
+    @apply rounded-xl mx-auto my-6 shadow-sm;
+  }
+  
+  .wp-block-quote {
+    @apply border-l-4 border-blue-600 pl-4 py-2 my-4 italic text-slate-700 bg-blue-50/50 rounded-r-lg;
+  }
+}
